@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "seed": "node seeds/userseed.js"
+  },
   "dependencies": {
     "2": "^3.0.0",
     "bcrypt": "^5.0.1",
