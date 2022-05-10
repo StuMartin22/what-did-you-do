@@ -1,4 +1,4 @@
-const User = require("./User");
+const User = require("./user");
 // const Food = require("./Food");
 // const Category = require("./Category");
 
@@ -10,4 +10,5 @@ const User = require("./User");
 //   foreignKey: "category_id",
 // });
 
-module.exports = { User, Food, Category };
+module.exports = { User };
+// Food, Category 
