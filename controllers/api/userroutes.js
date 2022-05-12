@@ -10,7 +10,7 @@ router.post("/", async (req, res) => {
       req.session.userId = userData.id;
       req.session.username = userData.username;
       req.session.loggedIn = true;
-
+//take data and insert into user table
       res.status(200).json(userData);
     });
   } catch (err) {
@@ -21,6 +21,7 @@ router.post("/login", async (req, res) => {
   try {
     const userData = await User.findOne({
       where: { username: req.body.username },
+      //&& password and select and make sure stuff matches, then allow user to redirect to prof
     });
 
     if (!userData) {
